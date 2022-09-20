@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = en>
+<head>
+
+    <!--             Metas && Imports              -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+    <title>tushar00gautam's Lamp Sites</title>
+</head>
+<body>
+
+<div class="header">
+    <nav class="structring">
+    
+        <img src="img/images/menu.png" class="menu-img" >
+        <img src="img/images/logo.png" class="logo">
+    
+    <ul>
+
+        <li><a href="">Latest</a></li>
+        <li><a href="">Modern</a></li>
+        <li><a href="">Contempory</a></li>
+        <li><a href="">Affordable</a></li>
+
+    </ul>
+
+    <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+</nav>
+
+<div class="middle-sec">
+
+    <img src="img/images/lamp.png" class="lamp">
+    <img src="img/images/light.png" class="light" id="lighton">
+
+</div>
+
+<div class="text-container">
+    <h1>Latest In Lightning</h1>
+    <p>This is the first lamp from our Company.We're making a huge collection of modern lamps
+        in all cotgries from budget lamps to premiuym lamps && for home use to partylamps to office
+        lamp use.
+        More Intresting Lamps are in R&D!!...
+    </p>
+    <a href="">Chcek All Collections</a>
+    <a href="">Source Code for This Page!!&nbsp;<i class="uil uil-toilet-paper"></i></a>
+    <div class="control">
+        <p>04</p>
+        <div class="line" id =lined>
+            <span></span>
+        </div>
+        <p>05</p>
+</div>
+</div>
+</div>
+
+<script>
+    var btn = document.getElementById("btn");
+    var lighton = document.getElementById("lighton");
+    var lined = document.getElementById("lined");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        lighton.classList.toggle("on");
+        lined.classList.toggle("controline");
+    }
+</script>
+
+</body>
+</html>
